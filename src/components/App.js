@@ -13,8 +13,10 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <h1>Mi lista de Pokemon</h1>
-        <PokeListFunc pokemons={this.state.pokemons}></PokeListFunc>
+        <h1 className="title">Mi lista de Pokemon</h1>
+        <section className="pokemons">
+          <PokeListFunc pokemons={this.state.pokemons}></PokeListFunc>
+        </section>
       </>
     );
   }
