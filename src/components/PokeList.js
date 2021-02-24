@@ -3,6 +3,7 @@ The App component does not import this file */
 
 import React from 'react';
 import Pokemon from './Pokemon';
+import '../stylesheets/layout/_pokemon-list.scss';
 
 class PokeList extends React.Component {
   constructor(props) {
@@ -12,7 +13,7 @@ class PokeList extends React.Component {
   render() {
     const pokemonItems = this.props.pokemons.map((pokemonItem) => {
       return (
-        <li key={pokemonItem.id}>
+        <li key={pokemonItem.id.toString()}>
           <Pokemon pokemon={pokemonItem} />
         </li>
       );
@@ -20,7 +21,7 @@ class PokeList extends React.Component {
 
     return (
       <div>
-        <ul>{pokemonItems}</ul>
+        <ul className="pokemon__list">{pokemonItems}</ul>
       </div>
     );
   }
