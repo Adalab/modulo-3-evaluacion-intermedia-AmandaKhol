@@ -10,19 +10,16 @@
   background-color: $color-secondary;
   color: $color-font-selected;
   padding: 8px;
-  margin: 5px 5px;
+  margin: 8px 8px;
   &--header {
+    border-top: 1px solid $color-bg;
     width: 100%;
   }
-  &--image {
-    height: 150px;
-    width: auto;
-    border-radius: 5px;
-  }
-
   &--title {
-    font-size: 22px;
-    margin: 7px;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 10px;
     text-align: center;
   }
   &--types {
@@ -32,9 +29,17 @@
   &--type {
     box-sizing: border-box;
     width: auto;
-    padding: 3px;
+    padding: 4px;
     background-color: $color-bg;
+    font-family: $font-main;
     color: $color-secondary;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 5px;
+  }
+  &--image {
+    height: 150px;
+    width: auto;
     border-radius: 5px;
   }
 }
