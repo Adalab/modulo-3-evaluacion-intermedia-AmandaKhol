@@ -1,5 +1,5 @@
 import React from 'react';
-import pokedata from '../data/data.json';
+import data from '../data/data.json';
 import PokeListFunc from './PokeListFunc';
 import '../stylesheets/layout/_page.scss';
 
@@ -7,16 +7,16 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      pokemons: pokedata,
+      pokemons: data,
     };
   }
 
   render() {
     return (
       <>
-        <section class="page__header">
-          <h1 class="title">Mi lista de pokemon</h1>
-        </section>
+        <header className="page__header">
+          <h1 className="title">Mi lista de pokemon</h1>
+        </header>
 
         <main className="main">
           <section className="pokemons">

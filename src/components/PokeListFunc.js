@@ -1,13 +1,15 @@
 import React from 'react';
-import Pokemon from './Pokemon';
+import PokemonFunc from './PokemonFunc';
 import '../stylesheets/layout/_pokemon-list.scss';
 
 const PokeListFunc = (props) => {
-  const pokemons = props.pokemons;
-  const pokemonItems = pokemons.map((pokemonItem) => {
+  const pokemonItems = props.pokemons.map((pokemonItem) => {
     return (
       <li key={pokemonItem.id.toString()}>
-        <Pokemon pokemon={pokemonItem} />
+        <PokemonFunc
+          pokemon={pokemonItem}
+          handlePokemon={props.handlePokemon}
+        />
       </li>
     );
   });

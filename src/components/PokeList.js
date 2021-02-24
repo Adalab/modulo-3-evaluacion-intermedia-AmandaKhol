@@ -6,10 +6,6 @@ import Pokemon from './Pokemon';
 import '../stylesheets/layout/_pokemon-list.scss';
 
 class PokeList extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     const pokemonItems = this.props.pokemons.map((pokemonItem) => {
       return (
