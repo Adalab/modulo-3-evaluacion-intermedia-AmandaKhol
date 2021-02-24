@@ -1,0 +1,40 @@
+@import '../core/core';
+
+.pokemon__item {
+  width: 180px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  background-color: $color-secondary;
+  color: $color-font-selected;
+  padding: 8px;
+  margin: 5px 5px;
+  &--header {
+    width: 100%;
+  }
+  &--image {
+    height: 150px;
+    width: auto;
+    border-radius: 5px;
+  }
+
+  &--title {
+    font-size: 22px;
+    margin: 7px;
+    text-align: center;
+  }
+  &--types {
+    display: flex;
+    justify-content: space-between;
+  }
+  &--type {
+    box-sizing: border-box;
+    width: auto;
+    padding: 3px;
+    background-color: $color-bg;
+    color: $color-secondary;
+    border-radius: 5px;
+  }
+}

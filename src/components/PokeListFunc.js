@@ -1,5 +1,6 @@
 import React from 'react';
 import Pokemon from './Pokemon';
+import '../stylesheets/layout/_pokemon-list.scss';
 
 const PokeListFunc = (props) => {
   const pokemons = props.pokemons;
@@ -13,7 +14,7 @@ const PokeListFunc = (props) => {
 
   return (
     <div>
-      <ul>{pokemonItems}</ul>
+      <ul className="pokemon__list">{pokemonItems}</ul>
     </div>
   );
 };

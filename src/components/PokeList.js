@@ -1,3 +1,6 @@
+/* I have included this file in order to have the solution resolved with class components. 
+The App component does not import this file */
+
 import React from 'react';
 import Pokemon from './Pokemon';
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import pokedata from '../data/data.json';
 import PokeListFunc from './PokeListFunc';
+import '../stylesheets/layout/_page.scss';
 
 class App extends React.Component {
   constructor(props) {
@@ -13,10 +14,15 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <h1 className="title">Mi lista de Pokemon</h1>
-        <section className="pokemons">
-          <PokeListFunc pokemons={this.state.pokemons}></PokeListFunc>
+        <section class="page__header">
+          <h1 class="title">Mi lista de pokemons</h1>
         </section>
+
+        <main className="main">
+          <section className="pokemons">
+            <PokeListFunc pokemons={this.state.pokemons}></PokeListFunc>
+          </section>
+        </main>
       </>
     );
   }
