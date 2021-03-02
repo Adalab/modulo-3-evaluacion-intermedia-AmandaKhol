@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import '../stylesheets/components/_pokemon.scss';
 
 class Pokemon extends React.Component {
@@ -32,3 +33,13 @@ class Pokemon extends React.Component {
 }
 
 export default Pokemon;
+
+Pokemon.propTypes = {
+  pokemon: PropTypes.exact({
+    name: PropTypes.string,
+    id: PropTypes.number,
+    types: PropTypes.array,
+    evolution: PropTypes.string,
+    url: PropTypes.string,
+  }),
+};

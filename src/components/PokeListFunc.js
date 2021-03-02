@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Pokemon from './Pokemon';
 import '../stylesheets/layout/_pokemon-list.scss';
 
@@ -20,3 +21,7 @@ const PokeListFunc = (props) => {
 };
 
 export default PokeListFunc;
+
+PokeListFunc.propTypes = {
+  pokemons: PropTypes.array,
+};

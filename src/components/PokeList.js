@@ -2,14 +2,11 @@
 The App component does not import this file */
 
 import React from 'react';
+import PropTypes from 'prop-types';
 import Pokemon from './Pokemon';
 import '../stylesheets/layout/_pokemon-list.scss';
 
 class PokeList extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     const pokemonItems = this.props.pokemons.map((pokemonItem) => {
       return (
@@ -28,3 +25,7 @@ class PokeList extends React.Component {
 }
 
 export default PokeList;
+
+PokeList.propTypes = {
+  pokemons: PropTypes.arrayOf(PropTypes.object),
+};

@@ -14,8 +14,8 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <section class="page__header">
-          <h1 class="title">Mi lista de pokemon</h1>
+        <section className="page__header">
+          <h1 className="title">Mi lista de pokemon</h1>
         </section>
 
         <main className="main">
